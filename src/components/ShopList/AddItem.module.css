@@ -1,0 +1,73 @@
+.add-item {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 50rem;
+  width: 90%;
+  margin: auto;
+}
+
+.button-block {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  margin-right: 0.2rem;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.add-item input {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin: 2px 0;
+  height: 2.5rem;
+}
+
+.add-name {
+  width: 20rem;
+}
+
+.add-amount {
+  width: 4rem;
+}
+
+@keyframes items-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn--add {
+  margin: 2px 0px;
+  margin-left: 3px;
+  width: 3rem;
+  height: 2.5rem;
+  align-self: flex-end;
+  background-color: #009624;
+}
+
+.btn--add:hover,
+.btn--add:focus {
+  background-color: #00c853;
+}
+
+.btn--cancel {
+  margin: 2px 0px;
+  margin-left: 3px;
+  width: 3rem;
+  height: 2.5rem;
+  align-self: flex-end;
+  background-color: #6d0000;
+}
+
+.btn--cancel:hover,
+.btn--cancel:focus {
+  background-color: #d85c67;
+}

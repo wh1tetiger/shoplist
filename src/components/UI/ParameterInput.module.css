@@ -1,0 +1,35 @@
+.input-block {
+  display: flex;
+  flex-flow: column;
+  margin-right: 0.2rem;
+  max-width: 50rem;
+}
+.input-block label {
+  font-size: small;
+  color: #7e7e7e;
+}
+
+.input-amount {
+  display: flex;
+  flex-flow: column;
+  max-width: 4rem;
+  width: 100%;
+}
+.input-amount label {
+  font-size: small;
+  color: #7e7e7e;
+}
+
+.input-block input[type="text"] {
+  width: 100%;
+  max-width: 20rem;
+}
+
+.input-block input[type="number"] {
+  width: 4rem;
+}
+
+input.num-input {
+  max-width: 4rem;
+  font-size: large;
+}

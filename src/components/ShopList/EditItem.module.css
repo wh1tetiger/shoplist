@@ -1,0 +1,55 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #7e7e7e;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+.edit_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 0.5rem;
+}
+
+.parameters-block {
+  display: flex;
+  flex-flow: row;
+}
+
+.edit_item input {
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  margin: 2px 0;
+  height: 2rem;
+}
+
+@keyframes items-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn--ok {
+  background-color: #009624;
+  margin: 0.2rem;
+  padding: 0.5rem;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.btn--ok:hover,
+.btn--ok:focus {
+  background-color: #00c853;
+}

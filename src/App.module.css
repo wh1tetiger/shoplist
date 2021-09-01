@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+  text-align: right;
+}
+
+.header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  max-width: 50rem;
+  width: 90%;
+  margin: auto;
+}
+
+.btn--plus {
+  background-color: #009624;
+  align-self: center;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: wh1te;
+}
+.btn--plus:hover,
+.btn--plus:focus {
+  background-color: #5efc82;
+}
+
+.logo {
+  vertical-align: text-bottom;
+}
+.footer span,
+a {
+  color: gray;
+  margin: 0.5rem;
+  font-size: small;
+}
+
+.header h1 {
+  white-space: nowrap;
+  font-size: 28px;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 4px #000000;
+  color: white;
+}
