@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import styles from "./EditItem.module.css";
 import Button from "../UI/Button";
 import ParameterInput from "../UI/ParameterInput";
@@ -14,6 +14,10 @@ const EditItem = (props) => {
   const colorInputRef = useRef();
   const volumeInputRef = useRef();
   const sizeInputRef = useRef();
+
+  useEffect(() => {
+    nameEditRef.current.focus();
+  }, []);
 
   let editedParameters = {};
 

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./AddItem.module.css";
 import Button from "../UI/Button";
 import ParametersDL from "../UI/ParametersDL";
@@ -22,6 +22,10 @@ const AddItem = (props) => {
   const volumeInputRef = useRef();
   const sizeInputRef = useRef();
   const colorInputRef = useRef();
+
+  useEffect(() => {
+    nameInputRef.current.focus();
+  }, []);
 
   const inputType = {
     DL: <ParametersDL ref={{ ref1: diameterInputRef, ref2: lengthInputRef }} />,
